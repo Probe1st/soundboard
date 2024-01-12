@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-900 text-white xl:text-xl 
+}
+
+#root {
+    @apply flex flex-col items-center flex-grow min-h-screen mx-auto lg:w-2/3
+}
+
+header {
+    @apply mb-10 flex flex-row justify-between w-full py-2 px-5 bg-gray-600 rounded-b-2xl
+}
+
+.button {
+    @apply flex flex-row justify-center items-center bg-gray-600 w-1/2 mb-7 rounded-2xl py-3 px-5 border-transparent border hover:border hover:border-white
+}
+
+/* main {
+    @apply flex-grow bg-gray-600 w-full mb-7 rounded-2xl py-3 px-5
+} */
