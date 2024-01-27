@@ -1,0 +1,1 @@
+export {Page as AuthWithEmail} from "./components/Page"

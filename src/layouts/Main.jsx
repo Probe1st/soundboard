@@ -14,7 +14,7 @@ function SoundButton({ name, source }) {
 function SoundButtons({ sounds }) {
     return sounds.map(audio => {
         return <SoundButton name={audio.name} source={audio.source} />
-    })
+    });
 }
 
 export function Main({ sounds }) {
@@ -24,4 +24,3 @@ export function Main({ sounds }) {
         </main>
     )
 }
-

@@ -1,20 +1,8 @@
-import { Auth, Main, Profile } from '../../pages/';
+import { Main } from '../../pages/';
 
 export const publicRoutes = [
     {
-        path: "/authentication",
-        element: <Auth />
-    }
-]
-
-export const privateRoutes = [
-    ...publicRoutes,
-    {
         path: "/",
         element: <Main />
-    },
-    {
-        path: "/profile",
-        element: <Profile />
     }
 ]

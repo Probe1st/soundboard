@@ -6,8 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { Provider } from 'react-redux';
-import { store } from './stores';
 
 // #region declare firebase app and analitics
 const firebaseConfig = {
@@ -27,13 +25,11 @@ const analytics = getAnalytics(app);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={store}> {/* store Redux*/}
     <BrowserRouter> {/* browser router react-router-dom */}
 
       <App /> {/* app */}
 
     </BrowserRouter>
-  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

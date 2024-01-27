@@ -18,6 +18,15 @@ header {
     @apply flex flex-row justify-center items-center bg-gray-600 w-1/2 mb-7 rounded-2xl py-3 px-5 border-transparent border hover:border hover:border-white
 }
 
-/* main {
-    @apply flex-grow bg-gray-600 w-full mb-7 rounded-2xl py-3 px-5
-} */
+input {
+    @apply bg-slate-700 outline-none px-5 py-2 rounded-2xl 
+}
+
+/* форма для входа с помощью почты */
+.authwithemail {
+    @apply flex flex-col items-center justify-center rounded-2xl bg-gray-600 w-2/3 py-10 px-5 my-10 space-y-7
+}
+
+.authwithemail > div {
+    @apply flex flex-col space-y-2 w-2/3
+}
